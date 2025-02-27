@@ -1,0 +1,30 @@
+:root{
+    --main-color: #E6324B;
+    --subtitle: 3rem;
+}
+.features-title{
+    color: var(--main-color);
+}
+.search-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.search-container input{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0 1rem 1rem 0rem;
+}
+.search-container button{
+    padding: 1rem;
+    background-color: #E6324B;
+    color: white;
+    border: 0;
+    border-radius: 1rem 0rem 0rem 1rem;
+    transition: all .2s ease;
+}
+.search-container button:active{
+    transform: scale(1.2);
+}
