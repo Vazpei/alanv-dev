@@ -16,6 +16,11 @@
     margin: 0 auto;
     padding: 1rem;
 }
+@media(min-width:768px){
+    .features-section{
+        width: 70rem;
+    }
+}
 .features-section h2{
     font-size: 2rem;
     color: var(--main-color);
