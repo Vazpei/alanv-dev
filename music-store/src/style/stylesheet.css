@@ -115,6 +115,10 @@ img{
     
 }
 @media(min-width:768px){
+    .navegacion{
+        width: 70rem;
+        margin: 0 auto;
+    }
     .navegacion nav{
         justify-content: space-evenly;
     }
@@ -137,6 +141,16 @@ img{
     grid-template-columns: repeat(1,1fr);
     width: 30rem;
     margin: 0 auto;
+}
+@media(min-width:768px){
+    .footer{
+        width: 70rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        gap: 5rem;
+        font-size: 1.2rem;
+    }
 }
 .footer-section h2{
     display: flex;

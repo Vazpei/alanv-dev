@@ -24,6 +24,12 @@
     border: 0;
     background-color: rgb(232, 232, 232);
 }
+@media(min-width:768px){
+    .login-container{
+        width: 70rem;
+        margin: 0 auto;
+    }
+}
 .inputs-container button{
     padding: 1rem;
     border-radius: 1rem;
