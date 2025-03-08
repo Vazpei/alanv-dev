@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import './style/Header.css'
 import Home from './components/Home.jsx';
 import Products from './components/Products.jsx';
 import Contact from './components/Contact.jsx';
+import Locate from './components/Locate.jsx';
 import { useState } from 'react';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         {page === "home" && <Home/>}
         {page === "contact" && <Contact/>}
         {page === "products" && <Products/>}
+        {page === "location" && <Locate/>}
       </main>
     </div>
   );
