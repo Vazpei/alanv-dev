@@ -1,0 +1,20 @@
+.highlights-container{
+    display: grid;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+@media (min-width:768px){
+     .highlights-container{
+        grid-template-columns: repeat(2,1fr);
+     }
+}
+@media (min-width:1200px){
+     .highlights-container{
+        grid-template-columns: repeat(3,1fr);
+     }
+}
+.section-title h2{
+    font-size: 1.5rem;
+    color: white;
+}

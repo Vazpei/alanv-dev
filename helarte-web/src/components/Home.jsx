@@ -8,12 +8,18 @@ export default function Home(){
     console.log(datap);
     return(
         <>
-        <h2>Destacado</h2>
+        <div className="section-title">
+            <h2>Destacado</h2>
+        </div>
         <div className="highlights-container">
             {datap.map(pipsha =>{
                 return(
                     <Card
-                    datap={pipsha}
+                    key={pipsha.id}
+                    name={pipsha.name}
+                    price={pipsha.price}
+                    image={pipsha.image}
+                    description={pipsha.description}
                     />
                 )
             })}

@@ -10,7 +10,6 @@ import { useState } from 'react';
 function App() {
 
   const [page,setPage] = useState("home");
-
   return (
     <div className="App">
       <div className="header-container">
@@ -28,6 +27,20 @@ function App() {
         {page === "products" && <Products/>}
         {page === "location" && <Locate/>}
       </main>
+      <footer className='footer'>
+        <div className="footer-section">
+          <p>Nosotros</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
+        </div>
+        <div className="footer-section">
+          <p>Nosotros</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
+        </div>
+        <div className="footer-section">
+          <p>Nosotros</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
+        </div>
+      </footer>
     </div>
   );
 }
