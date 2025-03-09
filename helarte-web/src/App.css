@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+footer{
+  display: grid;
+  gap: 1rem;
+  margin: 3rem auto 2rem auto;
+  width: 80%;
+}
+.footer-section .footer-title{
+  font-size: 1.5rem;
+  margin: 0;
+}
+.footer-section .footer-description{
+  font-size: .8rem;
+  margin: 0;
+}
+@media (min-width:768px){
+   footer{
+    grid-template-columns: repeat(3,1fr);
+   }
+}

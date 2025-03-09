@@ -29,16 +29,16 @@ function App() {
       </main>
       <footer className='footer'>
         <div className="footer-section">
-          <p>Nosotros</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
+          <p className='footer-title'>Nosotros</p>
+          <p className='footer-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
         </div>
         <div className="footer-section">
-          <p>Nosotros</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
+          <p className='footer-title'>Empresa</p>
+          <p className='footer-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
         </div>
         <div className="footer-section">
-          <p>Nosotros</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
+          <p className='footer-title'>Historia</p>
+          <p className='footer-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui ratione ducimus aperiam recusandae veniam cumque suscipit! Velit, libero? Delectus adipisci ipsum in non corporis. Quam nesciunt illum sequi debitis?</p>
         </div>
       </footer>
     </div>

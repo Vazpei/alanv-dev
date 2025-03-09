@@ -27,6 +27,20 @@ export const dataPizzas = [
         price:'$89.99 mxn',
         image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Vw7mEdcM8rh3vWDUqHmtMKBVJeOYhUuJJQ&s',
         description:'Pizza de pastor'
+    },
+    {
+        id: 5,
+        name:'Cuatro Quesos',
+        price:'$289.99 mxn',
+        image:'https://www.hola.com/horizon/landscape/e8bb41b65869-pizzacuatroquesos-adob-t.jpg',
+        description:'Pizza de pastor'
+    },
+    {
+        id: 6,
+        name:'Chorizo',
+        price:'$789.99 mxn',
+        image:'https://www.gourmets.net/img/Productos/575475.jpg',
+        description:'Deliciosa Pizza de chorizo'
     }
 
 ]
