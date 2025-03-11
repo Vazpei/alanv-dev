@@ -41,6 +41,7 @@ footer{
   gap: 1rem;
   margin: 3rem auto 2rem auto;
   width: 80%;
+  color: white;
 }
 .footer-section .footer-title{
   font-size: 1.5rem;

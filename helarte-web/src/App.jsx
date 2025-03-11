@@ -39,6 +39,9 @@ function App() {
                 <button onClick={() => setPage("location")}>Ubicacion</button>
             </nav>
       </div>
+      <div className="cartbtn">
+        
+      </div>
       <main>
         {page === "home" && <Home
         setCart={setCart}

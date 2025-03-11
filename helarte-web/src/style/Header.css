@@ -2,24 +2,25 @@
     --main-color:#2b2b2b;
 }
 .title{
-    font-size: 2rem;
+    font-size: 2.7rem;
 }
 .header-container{
     display: flex;
     justify-content: space-around;
     background-image:
         linear-gradient(to top, black 0%, transparent 100%),
-        url("https://www.shutterstock.com/image-photo/delicious-margherita-pizza-on-wooden-600nw-2466377147.jpg");
+        url("./../img/banner.jpg");
     background-size: cover;
     align-items: center;
     color: white;
+    height:25rem;
 }
 .navegation{
     display: flex;
     gap: 1rem;
     font-size: 1rem;
 }
-@media(max-width:584px){
+@media(max-width:878px){
     .navegation{
         padding: 1rem;
         display: flex;
@@ -29,16 +30,32 @@
         flex-direction: column;
     }
 }
+@media (min-width:1200px){
+     .navegation{
+        animation: 1s ease 0s 1 showImage;
+     }
+}
 .navegation button{
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
-    color: rgb(188, 185, 185);
+    color: rgb(255, 255, 255);
     background-color: transparent;
     border: 0;
-    font-size: 1rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
     transition: all .2s ease;
 }
 .navegation button:hover{
     color: rgb(255, 255, 255);
     transform: scale(1.1);
+}
+@keyframes showImage{
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }

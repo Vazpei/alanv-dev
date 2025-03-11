@@ -6,7 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 html{
-  background-color: rgb(223, 109, 3);
+  background-image: url("./img/background.jpg");
+  background-size: cover;
 }
 
 code {
