@@ -1,13 +1,11 @@
 import { useState } from "react";
 import "./../style/Card.css";
 
-export default function Card({name,key,price,image,description}){
-    const [cart,setCart] = useState([]);
-    const addToCart = name =>{
-        setCart(name);
-        console.log(`${name} added to cart.....`);
-        console.log(`Current cart: ${cart}`)
-        console.log(cart);
+export default function Card({addToCart,pipsha,name,id,price,image,description,setCart}){
+   
+    function addingPipsha(){
+        addToCart(pipsha);
+        console.log("adding key:",id);
     }
     return(
         <>
@@ -25,7 +23,11 @@ export default function Card({name,key,price,image,description}){
                     <h2>{price}</h2>
                 </div>
                 <div className="card-btn">
-                    <button className="add-pizza" onClick={() => addToCart(name)}>Agregar</button>
+                    <button
+                    type="button" 
+                    className="add-pizza"
+                    onClick={() => addingPipsha()}
+                    >Agregar</button>
                 </div>
             </div>
             

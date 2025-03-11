@@ -2,7 +2,9 @@ import './../style/Home.css'
 import Card from './Card.jsx'
 import { dataPizzas } from '../data/data.js'
 import { useState } from 'react'
-export default function Home(){
+
+
+export default function Home({addToCart}){
 
     const [datap, setDatap] = useState(dataPizzas);
     console.log(datap);
@@ -15,11 +17,13 @@ export default function Home(){
             {datap.map(pipsha =>{
                 return(
                     <Card
-                    key={pipsha.id}
+                    id={pipsha.id}
                     name={pipsha.name}
                     price={pipsha.price}
                     image={pipsha.image}
                     description={pipsha.description}
+                    pipsha={pipsha}
+                    addToCart={addToCart}
                     />
                 )
             })}

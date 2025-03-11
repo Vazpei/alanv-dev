@@ -8,8 +8,26 @@ import Locate from './components/Locate.jsx';
 import { useState } from 'react';
 
 function App() {
-
+  const [cart,setCart] = useState([]);
   const [page,setPage] = useState("home");
+
+  function addToCart(item){
+    const itemExists = cart.findIndex(pipsha => pipsha.id === item.id)
+    if(itemExists === -1){
+        console.log(itemExists);
+        console.log("Agregando.........");
+        item.quantity = 1;
+        setCart(prevCart => [...prevCart,item])
+    }else{
+        console.log(itemExists);
+        console.log("Ya existe");
+        const updatedCart = [...cart]
+        updatedCart[itemExists].quantity++
+        setCart(updatedCart);
+        console.log(`${item.name} already added`);
+    }
+    console.log("current cart",cart);
+  }
   return (
     <div className="App">
       <div className="header-container">
@@ -22,7 +40,10 @@ function App() {
             </nav>
       </div>
       <main>
-        {page === "home" && <Home/>}
+        {page === "home" && <Home
+        setCart={setCart}
+        addToCart={addToCart}
+        />}
         {page === "contact" && <Contact/>}
         {page === "products" && <Products/>}
         {page === "location" && <Locate/>}
