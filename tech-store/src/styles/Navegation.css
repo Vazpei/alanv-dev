@@ -1,0 +1,18 @@
+
+.navegation{
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    
+}
+.navegation button{
+    font-size: 1.8rem;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    transition: all .2s ease;
+}
+.navegation button:hover{
+    transform: scale(1.2);
+}
