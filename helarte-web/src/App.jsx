@@ -31,13 +31,20 @@ function App() {
   return (
     <div className="App">
       <div className="header-container">
-            <h2 className="title">RockPizza</h2>
+            <h2 className="title">RockPizza </h2>
             <nav className="navegation">
                 <button onClick={() => setPage("home")}>Inicio</button>
                 <button onClick={() => setPage("products")}>Productos</button>
                 <button onClick={() => setPage("contact")}>Contactanos</button>
                 <button onClick={() => setPage("location")}>Ubicacion</button>
             </nav>
+            <div className="cart-space">
+              <button className='btn-cart'>
+                  <span class="material-symbols-outlined">
+                  shopping_cart
+                  </span>
+              </button>
+            </div>
       </div>
       <div className="cartbtn">
         

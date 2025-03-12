@@ -56,3 +56,12 @@ footer{
     grid-template-columns: repeat(3,1fr);
    }
 }
+.btn-cart{
+  border: 0;
+  background-color: transparent;
+  color: white;
+  transition: all 2s ease;
+}
+.btn-cart:active{
+  transform: scale(1.5);
+}
