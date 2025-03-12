@@ -13,7 +13,14 @@ function App() {
   
   const [cart,setCart] = useState([]);
   const [page,setPage] = useState("home");
-
+  function resetCart(){
+    if(cart.length > 0){
+      console.log("Resetting cart");
+      setCart([]);
+    }else{
+      console.log("There´s nothing in cart");
+    }
+  }
   function addToCart(item){
     const itemExists = cart.findIndex(pipsha => pipsha.id === item.id)
     if(itemExists === -1){
@@ -71,8 +78,9 @@ function App() {
             )
           })}
           <div className="btn-area">
-            <button className='close-cart'>Cerrar</button>
-            <button className='success-cart' onClick={hideCart}>Pagar</button>
+            <button className='reset-cart' onClick={resetCart}>Limpiar carrito</button>
+            <button className='close-cart'onClick={hideCart}>Cerrar</button>
+            <button className='success-cart'>Pagar</button>
           </div>
         </div>
       </aside>
