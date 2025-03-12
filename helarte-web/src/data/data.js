@@ -12,7 +12,7 @@ export const dataPizzas = [
         name:'Hawaiana',
         price:'$199.99 mxn',
         image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtTd8pfTnHLvqXkB_Od2mX7vC4cy0dLCE4_d-1uWqG9uaJFnX2cRNurDBhX-bpECGfW0&usqp=CAU',
-        description:'Pizza tradicional con jamon y pina'
+        description:'Pizza con jamon y pina'
     },
     {
         id:3,

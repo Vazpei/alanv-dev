@@ -1,13 +1,16 @@
 
 import './App.css';
 import './style/Header.css'
+import CartIcon from './img/shoppingCart.svg'
 import Home from './components/Home.jsx';
 import Products from './components/Products.jsx';
 import Contact from './components/Contact.jsx';
 import Locate from './components/Locate.jsx';
+import Cart from './components/Cart.jsx';
 import { useState } from 'react';
 
 function App() {
+  
   const [cart,setCart] = useState([]);
   const [page,setPage] = useState("home");
 
@@ -28,8 +31,14 @@ function App() {
     }
     console.log("current cart",cart);
   }
+
+  function hideCart(){
+    console.log('Cart toggled')
+    document.querySelector('.cart').classList.toggle('cart-on');
+  }
   return (
     <div className="App">
+      
       <div className="header-container">
             <h2 className="title">RockPizza </h2>
             <nav className="navegation">
@@ -39,16 +48,34 @@ function App() {
                 <button onClick={() => setPage("location")}>Ubicacion</button>
             </nav>
             <div className="cart-space">
-              <button className='btn-cart'>
-                  <span class="material-symbols-outlined">
-                  shopping_cart
-                  </span>
+              <button className='btn-cart' onClick={hideCart}> 
+                <img src={CartIcon} alt="" srcset="" width={'30px'}/>
               </button>
             </div>
       </div>
-      <div className="cartbtn">
-        
-      </div>
+      <aside className='cart'>
+        <div className="cart-container">
+          <h2>Tu Carrito</h2>
+          {cart.map(item => {
+            const {name,price,image,quantity}= item;
+            return(
+              <>
+                <Cart
+                name={name}
+                price={price}
+                image={image}
+                quantity={quantity}
+                item={item}
+                />
+              </>
+            )
+          })}
+          <div className="btn-area">
+            <button className='close-cart'>Cerrar</button>
+            <button className='success-cart' onClick={hideCart}>Pagar</button>
+          </div>
+        </div>
+      </aside>
       <main>
         {page === "home" && <Home
         setCart={setCart}

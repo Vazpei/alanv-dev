@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+:root{
+  --MainColor:rgb(223, 109, 3);
+}
 
 .App-logo {
   height: 40vmin;
@@ -57,11 +60,47 @@ footer{
    }
 }
 .btn-cart{
+  bottom: 1rem;
+  right: 1rem;
+  position: fixed;
   border: 0;
-  background-color: transparent;
+  background-color: var(--MainColor);
+  padding: .7rem;
+  border-radius: 50%;
   color: white;
   transition: all 2s ease;
 }
 .btn-cart:active{
   transform: scale(1.5);
+}
+.cart{
+  display: none;
+  background-color: white;
+  padding: 1rem;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 20rem;
+}
+.cart-on{
+  display: block;
+  height: 100%;
+  width: 10rem;
+}
+.btn-area{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.success-cart, .close-cart{
+  border: 0;
+  padding: .5rem;
+  border-radius: .5rem;
+  color: white;
+}
+.success-cart{
+  background-color: rgb(36, 104, 75);
+}
+.close-cart{
+  background-color: brown;
 }

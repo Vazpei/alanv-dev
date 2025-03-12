@@ -1,0 +1,20 @@
+:root{
+    --MainColor:rgb(223, 109, 3);
+}
+.mini-card{
+    width: 10rem;
+}
+.img-mini img{
+    width: 100%;
+}
+.mini-quantity button{
+    border: 0;
+    background-color: var(--MainColor);
+    border-radius: 50%;
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+.mini-quantity button:active{
+    background-color: rgb(248, 165, 58);
+}

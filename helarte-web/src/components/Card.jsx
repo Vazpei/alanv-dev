@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import "./../style/Card.css";
 
 export default function Card({addToCart,pipsha,name,id,price,image,description,setCart}){
