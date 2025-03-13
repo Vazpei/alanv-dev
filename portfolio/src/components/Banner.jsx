@@ -1,6 +1,6 @@
 import './../styles/Banner.css'
-import linkedinLogo from './../img/linkedin.png'
-import gitLogo from './../img/git.png'
+import linkedinLogo from './../../public/img/linkedin.png'
+import gitLogo from './../../public/img/git.png'
 export default function Banner() {
     return(
         <>
