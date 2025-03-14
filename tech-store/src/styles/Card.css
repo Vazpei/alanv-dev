@@ -31,6 +31,10 @@
     font-style: var(--mainFont);
     font-weight: 100;
     font-size: 2rem;
+    transition: all .1s ease-in;
+}
+.btn-card button:active{
+    transform: scale(1.1);
 }
 .btn-card{
     text-align: center;

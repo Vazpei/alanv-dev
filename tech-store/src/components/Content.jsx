@@ -4,10 +4,10 @@ import  Contact from './Contact'
 import About from './About'
 
 
-export default function Content({page,data,setCart}){
+export default function Content({page,data,addToCart}){
     return(
         <>
-        {page === "Home" && <Home setCart={setCart}/>}
+        {page === "Home" && <Home addToCart={addToCart}/>}
         {page === 'Search' && <Search/>}
         {page === 'Contact' && <Contact/>}
         {page === 'About' && <About/>}

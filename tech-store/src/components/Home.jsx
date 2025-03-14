@@ -2,7 +2,7 @@ import data from './../data/data.js'
 import Card from './Card.jsx';
 import './../styles/Home.css'
 
-export default function Home({setCart}) {
+export default function Home({addToCart}) {
     console.log(data);
     return(
         <>
@@ -13,7 +13,7 @@ export default function Home({setCart}) {
                 <>
                     <div className="card-container">
                         <Card
-                            setCart={setCart}
+                            addToCart={addToCart}
                             key={id}
                             id={id}
                             name={name}

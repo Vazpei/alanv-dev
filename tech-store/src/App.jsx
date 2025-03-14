@@ -12,11 +12,22 @@ function App() {
   const [page,setPage] = useState("Home");
   const [cart,setCart] = useState([]);
 
+  function addToCart(item){
+    const itemExists = cart.findIndex(itemCart => itemCart.id === item.id);
+    if(itemExists >= 0){
+      item.quantity++;
+    }else{
+      setCart(prevCart => [...prevCart,item])//copiamos el previo y agregamos nuevo item
+      item.quantity = 1;
+    }
+    console.log(itemExists);
+  }
+
   return (
     <>
       <Navegation setPage={setPage}/>
       <Hero/>
-      <Content page={page} setCart={setCart}/>
+      <Content page={page} addToCart={addToCart}/>
       <Footer/>
       <Cart cart={cart}/>
     </>

@@ -1,5 +1,6 @@
 :root{
     --enphasisColor:#005bc5;
+    --mainFont:"Montserrat", sans-serif;
 }
 .btnActiveCart button{
     border: 0;
@@ -9,4 +10,114 @@
     position: fixed;
     right: 1rem;
     bottom: 1rem;
+    transition: all .2s ease;
+}
+.btnActiveCart button:active{
+    transform: scale(1.2)
+}
+.mini-card{
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100%;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.mini-card img{
+    width: 30%;
+}
+.mini-card p{
+    font-size: 1.5rem;
+}
+.Quantity{
+    font-size: 1.5rem;
+}
+.mini-card button{
+    border: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #005bc5;
+}
+.price{
+    font-size: 2rem;
+}
+.cart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 25rem;
+    background-color: white;
+    padding: 1rem;
+    margin: 0 auto;
+    overflow: auto;
+    transition: all .2s ease;
+}
+.cart-container{
+    display: flex;
+    flex-direction: column;
+}
+.cartTitle h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.displayon{
+    display: block;
+    animation: slideIn 0.5s forwards;
+}
+.displayoff{
+    animation: slideOut .5s forwards;
+}
+.close-card-btn{
+    position: fixed;
+    bottom: 1rem;
+}
+.close-card-btn button{
+    background-color: #005bc5;
+    border: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.cart-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.cart-buttons button{
+    margin: 0 auto;
+    width: 60%;
+    border: 0;
+    padding: 1.5rem 0;
+    font-family: var(--mainFont);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    color: white;
+}
+.btn-e{
+    background-color: rgb(145, 6, 6);
+}
+.btn-p{
+    background-color: #005bc5;
+}
+@keyframes slideIn {
+    from {
+      right: -300px; /* Empieza fuera de la pantalla */
+    }
+    to {
+      right: 0; /* Se mueve hasta el borde izquierdo */
+    }
+  }
+@keyframes slideOut {
+        from {
+          right: 0; /* Empieza visible */
+        }
+        to {
+          right: -300px; /* Se mueve fuera de la pantalla */
+        }
 }

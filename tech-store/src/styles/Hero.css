@@ -24,6 +24,8 @@
 }
 .imagebanner img{
     width: 100%;
+    transition: all .3s ease;
+    animation: appearSlow 2s forwards;
 }
 @media (min-width:768px){
      .imagebanner img{
@@ -38,4 +40,11 @@
     color: white;
     background-color: transparent;
     border-radius: .5rem;
+}
+@keyframes appearSlow {
+    from{
+        right: 0px;
+    }to{
+        right: 300px;
+    }
 }
