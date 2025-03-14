@@ -1,0 +1,12 @@
+:root{
+    --enphasisColor:#005bc5;
+}
+.btnActiveCart button{
+    border: 0;
+    background-color: var(--enphasisColor);
+    border-radius: 50%;
+    padding: 2rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}

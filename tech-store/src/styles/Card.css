@@ -1,0 +1,37 @@
+:root{
+    --mainFont:"Montserrat", sans-serif;
+    --enphasisColor:#005bc5;
+}
+
+.card{
+    width: 25rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.img-card img{
+    width: 100%;
+}
+.title-card{
+    font-size: 1.3rem;
+}
+.description-card{
+    font-size: 1.3rem;
+}
+.price-card{
+    font-size: 2rem;
+}
+.btn-card button{
+    width: 80%;
+    background-color: var(--enphasisColor);
+    border: 0;
+    border-radius: 3rem;
+    padding: 1rem;
+    color: white;
+    font-style: var(--mainFont);
+    font-weight: 100;
+    font-size: 2rem;
+}
+.btn-card{
+    text-align: center;
+}

@@ -6,15 +6,19 @@ import Hero from './components/Hero.jsx'
 import Navegation from './components/Navegation.jsx'
 import Content from './components/Content.jsx'
 import Footer from './components/Footer.jsx'
+import Cart from './components/Cart.jsx'
 
 function App() {
   const [page,setPage] = useState("Home");
+  const [cart,setCart] = useState([]);
+
   return (
     <>
       <Navegation setPage={setPage}/>
       <Hero/>
-      <Content page={page}/>
+      <Content page={page} setCart={setCart}/>
       <Footer/>
+      <Cart cart={cart}/>
     </>
   )
 }

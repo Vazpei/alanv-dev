@@ -1,16 +1,28 @@
 import data from './../data/data.js'
 import Card from './Card.jsx';
+import './../styles/Home.css'
 
-export default function Home() {
+export default function Home({setCart}) {
     console.log(data);
     return(
         <>
+        <h2 className='destacado-title' style={{textAlign:"center",fontSize:"3rem"}}>Destacado</h2>
         {data.map(item => {
+            const { id,name,price,image,description } = item;
             return(
                 <>
-                <Card
-                    name={item.name}
-                />
+                    <div className="card-container">
+                        <Card
+                            setCart={setCart}
+                            key={id}
+                            id={id}
+                            name={name}
+                            image={image}
+                            price={price}
+                            description={description}
+                            item={item}
+                        />
+                    </div>
                 </>
             )
         })}
