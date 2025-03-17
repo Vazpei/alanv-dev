@@ -7,12 +7,14 @@
     
 }
 .navegation button{
+    font-weight: 100;
     font-size: 1.8rem;
     border: 0;
     background-color: transparent;
-    color: white;
-    transition: all .2s ease;
+    color: rgb(231, 229, 229);
+    transition: all .5s ease;
 }
-.navegation button:hover{
-    transform: scale(1.2);
+.navegation .Active_btn{
+    font-weight: 900;
+    color: white;
 }

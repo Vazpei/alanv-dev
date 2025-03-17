@@ -2,4 +2,14 @@
 .card-container{
     padding-top: 2rem;
     display: grid;
+    transition: all 0.2s ease;
+    
+}
+@keyframes animationMenu {
+    from {
+        transform: translateX(-100%); /* Empieza visible */
+      }
+      to {
+        transform: translateX(0%); /* Se mueve fuera de la pantalla */
+      }
 }

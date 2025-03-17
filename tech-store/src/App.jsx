@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Navegation setPage={setPage}/>
+      <Navegation setPage={setPage} page={page}/>
       <Hero/>
       <Content page={page} addToCart={addToCart}/>
       <Footer/>

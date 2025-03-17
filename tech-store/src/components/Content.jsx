@@ -8,7 +8,7 @@ export default function Content({page,data,addToCart}){
     return(
         <>
         {page === "Home" && <Home addToCart={addToCart}/>}
-        {page === 'Search' && <Search/>}
+        {page === 'Search' && <Search addToCart={addToCart}/>}
         {page === 'Contact' && <Contact/>}
         {page === 'About' && <About/>}
         </>

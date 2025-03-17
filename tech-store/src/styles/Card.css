@@ -8,6 +8,7 @@
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
+    animation: SlideAnimation .3s forwards;
 }
 .img-card img{
     width: 100%;
@@ -38,4 +39,13 @@
 }
 .btn-card{
     text-align: center;
+}
+
+@keyframes SlideAnimation {
+    from {
+        transform: translateX(-100%); /* Empieza visible */
+      }
+      to {
+        transform: translateX(0%); /* Se mueve fuera de la pantalla */
+      }
 }

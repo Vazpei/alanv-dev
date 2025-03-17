@@ -23,6 +23,30 @@
         price:"24,000",
         brand:"Samsung",
         description:"Samsung Smartphone"
+    },
+    {
+        id:4,
+        name:"iPhone 16 Pro Max",
+        image:"https://m.media-amazon.com/images/I/51t0aDoyV8L._AC_UF894,1000_QL80_.jpg",
+        price:"20,000",
+        brand:"Apple",
+        description:"New iPhone 16"
+    },
+    {
+        id:5,
+        name:"Magic 6 Pro",
+        image:"https://www.honor.com/content/dam/honor/mx/product-list/smartphone/honor-magic6-pro/honor-magic6-pro-black.png",
+        price:"28,999",
+        brand:"Honor",
+        description:"New Honor phone"
+    },
+    {
+        id:6,
+        name:"Moto Egde 50 Ultra",
+        image:"https://ss632.liverpool.com.mx/xl/1156670134.jpg",
+        price:"40,000",
+        brand:"Motorola",
+        description:"New Motorola"
     }
 
 ]

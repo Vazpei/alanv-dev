@@ -7,6 +7,7 @@
     height: 50rem;
     display: flex;
     align-items: center;
+    animation:appearSlow 2s forwards;
 }
 .infobanner{
     display: flex;
@@ -43,8 +44,8 @@
 }
 @keyframes appearSlow {
     from{
-        right: 0px;
+        opacity: 0;
     }to{
-        right: 300px;
+        opacity: 1;
     }
 }

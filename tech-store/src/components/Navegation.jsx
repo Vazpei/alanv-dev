@@ -1,14 +1,48 @@
 
 import './../styles/Navegation.css'
 
-export default function Navegation({setPage}){
+export default function Navegation({setPage,page}){
+
+    function activateButton(data){
+        setPage(data);
+
+        switch(data){
+            case'Home':
+            console.log("Home Selected");
+                document.querySelector(".Homebtn").classList.toggle("Active_btn")
+                document.querySelector(".Searchbtn").classList.remove("Active_btn")
+                document.querySelector(".Contactbtn").classList.remove("Active_btn")
+                document.querySelector(".Aboutbtn").classList.remove("Active_btn")
+                break;
+                case 'Search':
+                    document.querySelector(".Searchbtn").classList.toggle("Active_btn")
+                    document.querySelector(".Homebtn").classList.remove("Active_btn")
+                    document.querySelector(".Contactbtn").classList.remove("Active_btn")
+                    document.querySelector(".Aboutbtn").classList.remove("Active_btn")
+                    break;
+                    case 'Contact':
+                        document.querySelector(".Contactbtn").classList.toggle("Active_btn")
+                        document.querySelector(".Searchbtn").classList.remove("Active_btn")
+                        document.querySelector(".Homebtn").classList.remove("Active_btn")
+                        document.querySelector(".Aboutbtn").classList.remove("Active_btn")
+                        break;
+                        case 'About':
+                            document.querySelector(".Aboutbtn").classList.toggle("Active_btn")
+                            document.querySelector(".Searchbtn").classList.remove("Active_btn")
+                            document.querySelector(".Contactbtn").classList.remove("Active_btn")
+                            document.querySelector(".Homebtn").classList.remove("Active_btn")
+                            break;
+        default:
+            console.log("Switch Error");
+        }
+    }
     return(
         <>
         <nav className="navegation">
-            <button onClick={() => setPage("Home")}>Home</button>
-            <button onClick={() => setPage("Search")}>Search</button>
-            <button onClick={() => setPage("Contact")}>Contact</button>
-            <button onClick={() => setPage("About")}>About</button>
+            <button className='Homebtn' onClick={() => activateButton('Home')}>Home</button>
+            <button className="Searchbtn" onClick={() => activateButton('Search')}>Search</button>
+            <button className="Contactbtn" onClick={() => activateButton('Contact')}>Contact</button>
+            <button className="Aboutbtn" onClick={() => activateButton('About')}>About</button>
         </nav>
         </>
     )

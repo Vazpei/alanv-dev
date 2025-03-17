@@ -18,7 +18,7 @@ export default function Card({addToCart,name,price,image,id,description,item}){
                 <p>{description}</p>
             </div>
             <div className="price-card">
-                <h2>{price}</h2>
+                <h2>${price} mxn</h2>
             </div>
             <div className="btn-card">
                 <button onClick={sendToCart}>Agregar</button>
