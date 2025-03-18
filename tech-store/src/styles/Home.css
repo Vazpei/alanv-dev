@@ -3,7 +3,24 @@
     padding-top: 2rem;
     display: grid;
     transition: all 0.2s ease;
-    
+    gap: 1rem;
+}
+.main-card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media(min-width:580px){
+  .main-card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width:1200px) {
+  .main-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 @keyframes animationMenu {
     from {

@@ -1,0 +1,46 @@
+:root{
+    --mainFont:"Montserrat", sans-serif;
+    --enphasisColor:#005bc5;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+    width: 40rem;
+}
+.contact-space input, .contact-space textarea{
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 1rem;
+    background-color: rgb(180, 179, 179);
+    font-family: var(--mainFont);
+    font-weight: 600;
+    width: 30rem;
+}
+.contact-space textarea{
+    height: 20rem;
+    padding: 1rem;
+}
+.contact-title{
+    font-size: 2rem;
+    text-align: center;
+}
+.contact-button button{
+    border: 0;
+    background-color:var(--enphasisColor);
+    color: white;
+    font-family: var(--mainFont);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    width: 20rem;
+    font-weight: 500;
+}
+.contact-button button:active{
+    background-color: #3694ff;
+}

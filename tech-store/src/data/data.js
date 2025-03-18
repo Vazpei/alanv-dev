@@ -47,6 +47,54 @@
         price:"40,000",
         brand:"Motorola",
         description:"New Motorola"
+    },
+    {
+        id:6,
+        name:"Moto Egde 50 Ultra",
+        image:"https://ss632.liverpool.com.mx/xl/1156670134.jpg",
+        price:"40,000",
+        brand:"Motorola",
+        description:"New Motorola"
+    },
+    {
+        id:6,
+        name:"Vivo X100 Ultra",
+        image:"https://http2.mlstatic.com/D_NQ_NP_809026-MLM79552736641_092024-O.webp",
+        price:"40,000",
+        brand:"Motorola",
+        description:"New Motorola"
+    },
+    {
+        id:6,
+        name:"Rog Phone 8",
+        image:"https://http2.mlstatic.com/D_NQ_NP_699694-MLA80020209127_102024-O.webp",
+        price:"40,000",
+        brand:"Motorola",
+        description:"New Motorola"
+    },
+    {
+        id:6,
+        name:"Moto Egde 50 Ultra",
+        image:"https://ss632.liverpool.com.mx/xl/1156670134.jpg",
+        price:"40,000",
+        brand:"Motorola",
+        description:"New Motorola"
+    },
+    {
+        id:6,
+        name:"Pura 70 Ultra",
+        image:"https://http2.mlstatic.com/D_NQ_NP_984228-MLU76136632699_052024-O.webp",
+        price:"30,000",
+        brand:"Huawei",
+        description:"New Huawei Pura"
+    },
+    {
+        id:6,
+        name:"Redmagic 10 Pro",
+        image:"https://m.media-amazon.com/images/I/61IoU069EgL._AC_UF1000,1000_QL80_.jpg",
+        price:"20,000",
+        brand:"Redmagic",
+        description:"New gamer phone"
     }
 
 ]
