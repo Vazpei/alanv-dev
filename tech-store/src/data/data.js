@@ -42,19 +42,19 @@
     },
     {
         id:6,
-        name:"Moto Egde 50 Ultra",
-        image:"https://ss632.liverpool.com.mx/xl/1156670134.jpg",
-        price:"40,000",
-        brand:"Motorola",
-        description:"New Motorola"
+        name:"One Plus Ace 5",
+        image:"https://fdn2.gsmarena.com/vv/bigpic/oneplus-ace5-pro.jpg",
+        price:"20,000",
+        brand:"Oppo",
+        description:"Nuevo Ace 5"
     },
     {
         id:6,
-        name:"Moto Egde 50 Ultra",
-        image:"https://ss632.liverpool.com.mx/xl/1156670134.jpg",
-        price:"40,000",
-        brand:"Motorola",
-        description:"New Motorola"
+        name:"Samung Galaxy A16",
+        image:"https://www.att.com/scmsassets/global/devices/phones/samsung/samsung-galaxy-a16-5g/defaultimage/blue-black-hero-zoom.png",
+        price:"2,000",
+        brand:"Samsung",
+        description:"Samsung economico"
     },
     {
         id:6,

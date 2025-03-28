@@ -105,6 +105,10 @@
 .btn-p{
     background-color: #005bc5;
 }
+.total-label h2{
+    font-size: 2rem;
+    text-align: center;
+}
 @keyframes slideIn {
     from {
       right: -300px; /* Empieza fuera de la pantalla */

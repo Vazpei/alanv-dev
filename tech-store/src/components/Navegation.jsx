@@ -39,10 +39,10 @@ export default function Navegation({setPage,page}){
     return(
         <>
         <nav className="navegation">
-            <button className='Homebtn' onClick={() => activateButton('Home')}>Home</button>
-            <button className="Searchbtn" onClick={() => activateButton('Search')}>Search</button>
-            <button className="Contactbtn" onClick={() => activateButton('Contact')}>Contact</button>
-            <button className="Aboutbtn" onClick={() => activateButton('About')}>About</button>
+            <button className='Homebtn' onClick={() => activateButton('Home')}>Inicio</button>
+            <button className="Searchbtn" onClick={() => activateButton('Search')}>Buscar</button>
+            <button className="Contactbtn" onClick={() => activateButton('Contact')}>Contacto</button>
+            <button className="Aboutbtn" onClick={() => activateButton('About')}>Acerca de</button>
         </nav>
         </>
     )

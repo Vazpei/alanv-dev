@@ -16,7 +16,7 @@ export default function Search({addToCart}) {
             filteredData = setFilteredData(data.filter(item => item.name.includes(string)));
             console.log(filteredData);
         }else{
-            console.log("The search space cannot be empty");
+            alert("The search space cannot be empty");
         }
     }
     return(
