@@ -19,14 +19,10 @@ function App() {
       updatedCart[itemExists].quantity++;//Updating cart quant
       setCart(updatedCart);//setting the cart copy with the old one to apply changes on state
       //Adding the summon of the products
-      console.log("Total ",total);
-      console.log(typeof total);
-      console.log("Price item ",price);
-      console.log(typeof price);
       //Convert to float and assign to Total
-      let priceNoComa = price.replace(/,/g, "");
-      let totalNoComa = total.replace(/,/g,"");
-      let tempTotal = parseFloat(totalNoComa) + parseFloat(priceNoComa);
+      let priceNoComa = price.replace(/,/g, "");//erase coma to price
+      let totalNoComa = total.replace(/,/g,"");//erase coma to total
+      let tempTotal = parseFloat(totalNoComa) + parseFloat(priceNoComa);//convert to do operation
       console.log(`priceNoComa ${priceNoComa} total ${totalNoComa} tempTotal ${tempTotal}`);
       tempTotal = tempTotal.toLocaleString("en-US");
       setTotal(tempTotal.toString());
