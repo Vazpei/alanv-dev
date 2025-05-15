@@ -109,6 +109,11 @@
     font-size: 2rem;
     text-align: center;
 }
+.vaciop{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
 @keyframes slideIn {
     from {
       right: -300px; /* Empieza fuera de la pantalla */

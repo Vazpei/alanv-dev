@@ -1,7 +1,12 @@
 import { useState } from 'react';
 import './../styles/Cart.css'
+
+
 export default function Cart({cart,setCart,addToCart,setTotal,total}){
     
+    const isEmpty = () => cart.length === 0;
+    const cartTotal = () => cart.reduce((summary, item) => summary + (item.quantity * item.price),0)
+    //Reduce checks the cart and add all that exists to operation
     function showCart(){
         const classExists = document.querySelector(".cart").classList.contains("displayon")
         console.log("classList ",classExists);
@@ -15,7 +20,6 @@ export default function Cart({cart,setCart,addToCart,setTotal,total}){
     }
     function clearCart(){
         console.log("Clearing cart...........");
-        setTotal("0");
         setCart([]);
     }
     console.log("TOTAL: ",total);
@@ -29,28 +33,32 @@ export default function Cart({cart,setCart,addToCart,setTotal,total}){
                         <div className='cartTitle'>
                            <h2>Mi Carrito</h2>
                         </div>
-                        {cart.map(item =>{
-                                const { image,name,price,quantity,id } = item;
-                                function addingToCart(){
-                                    console.log("Adding to cart........");
-                                    addToCart(item);
-                                }
-                                
-                                return(
-                                    <>
-                                        <div className="mini-card">
-                                                <p>id {id}</p>
-                                                <img src={image} alt="" />
-                                                <p>{name}</p>
-                                                <h2 className='Quantity'>Quantity: {quantity}</h2>
-                                                <button onClick={addingToCart} >+</button>
-                                                <h2 className='price'>${price} mxn</h2>
-                                        </div>
-                                    </>
-                                )
-                        })}
+                        {isEmpty() ? (
+                            <p className='vaciop'>No hay articulos...</p>
+                        ): 
+                        cart.map(item =>{
+                            const { image,name,price,quantity,id } = item;
+                            function addingToCart(){
+                                console.log("Adding to cart........");
+                                addToCart(item);
+                            }
+                            
+                            return(
+                                <>
+                                    <div className="mini-card">
+                                            <p>id {id}</p>
+                                            <img src={image} alt="" />
+                                            <p>{name}</p>
+                                            <h2 className='Quantity'>Quantity: {quantity}</h2>
+                                            <button onClick={addingToCart} >+</button>
+                                            <h2 className='price'>${price} mxn</h2>
+                                    </div>
+                                </>
+                            )
+                        })
+                        }
                         <div className="total-label">
-                            <h2>Total: ${total} mxn</h2>
+                            <h2>Total: ${cartTotal()}</h2>
                         </div>
                         <div className="cart-buttons">
                             <button className='btn-p'>Pagar</button>
