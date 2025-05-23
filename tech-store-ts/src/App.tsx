@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import './App.css'
-import Navegation from './components/Navegation.jsx'
-import Content from './components/Content.jsx'
-import Footer from './components/Footer.jsx'
-import Cart from './components/Cart.jsx'
+import Navegation from './components/Navegation.js'
+import Content from './components/Content.js'
+import Footer from './components/Footer.js'
+import Cart from './components/Cart.js'
 import { useCart } from './hooks/useCart.js'
 
 function App() {
 
   const { cart,total,setCart,setTotal,addToCart } = useCart();
   const [page,setPage] = useState("Home");
+
+  const [auth, setAuth] = useState(false);
 
   return (
     <>

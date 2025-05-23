@@ -1,6 +1,6 @@
-import data from './../data/data.js'
-import Card from './Card.jsx';
-import Hero from './Hero.jsx';
+import data from '../data/data.js'
+import Card from './Card.js';
+import Hero from './Hero.js';
 import './../styles/Home.css'
 
 export default function Home({addToCart}) {
