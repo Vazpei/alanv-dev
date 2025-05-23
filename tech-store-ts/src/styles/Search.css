@@ -1,0 +1,38 @@
+:root{
+    --mainFont:"Montserrat", sans-serif;
+    --enphasisColor:#005bc5;
+}
+.search_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:5rem auto;
+    gap: 1rem;
+}
+.search-title h2{
+    font-size: 2rem;
+}
+.search-inp{
+    display: flex;
+}
+.search-inp input{
+    width: 20rem;
+    border-radius: 1rem 0px 0px 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--mainFont);
+    border: 0px;
+    background-color: rgb(224, 224, 224);
+    color: rgb(57, 57, 57);
+}
+.search-inp button{
+    border: 0px;
+    background-color: var(--enphasisColor);
+    padding: 1rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+.search-inp button:active{
+    background-color: #368ff5;
+}

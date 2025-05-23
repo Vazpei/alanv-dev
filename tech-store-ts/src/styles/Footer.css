@@ -1,0 +1,13 @@
+
+.footer{
+    margin: 4rem auto 4rem auto;
+    width: 30rem;
+    display: grid;
+
+}
+.section-title h2{
+    font-size: 2rem;
+}
+.section-description p{
+    font-size: 1rem;
+}

@@ -1,0 +1,51 @@
+:root{
+    --mainFont:"Montserrat", sans-serif;
+}
+.banner{
+    width: 100%;
+    background-color: rgb(81, 81, 81);
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    animation:appearSlow 2s forwards;
+}
+.infobanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.infobanner h2{
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+.bannertitle h2{
+    font-size: 2rem;
+}
+.imagebanner img{
+    width: 100%;
+    transition: all .3s ease;
+    animation: appearSlow 2s forwards;
+}
+@media (min-width:768px){
+     .imagebanner img{
+        width: 45rem;
+     }
+}
+.btnbanner button{
+    font-family: var(--mainFont);
+    font-weight: 700;
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+    background-color: transparent;
+    border-radius: .5rem;
+}
+@keyframes appearSlow {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

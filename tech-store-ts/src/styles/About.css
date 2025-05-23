@@ -1,0 +1,12 @@
+
+.about-container{
+    margin: 4rem ;
+}
+.about-title h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.about-info p{
+    font-size: 2rem;
+    text-align: left;
+}
