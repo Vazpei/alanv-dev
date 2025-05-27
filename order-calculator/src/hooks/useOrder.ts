@@ -23,11 +23,17 @@ export default function useOrder(){
     }
     const [totalOrder,setTotalOrder] = useState<TotalOrder>({total:0});
 
+    const removeItem = (id: MenuItem['id']) =>{
+       setOrder(order.filter( item => item.id !== id));
+       console.log(order);
+    }
+
     console.log(order);
     return{
         order,
         addItem,
         totalOrder,
+        removeItem,
         setTotalOrder
     }
 }

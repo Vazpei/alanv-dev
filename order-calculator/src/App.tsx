@@ -3,9 +3,11 @@ import MenuItem from "./components/MenuItem";
 import { menuItems } from "./data/db"
 import useOrder from "./hooks/useOrder";
 import OrderContents from "./components/OrderContents";
+import OrderTotals from "./components/OrderTotals";
+import TipPercentage from "./components/TipPercentage";
 
 function App() {
-  const { order, addItem, totalOrder } = useOrder()
+  const { order, addItem, totalOrder,removeItem } = useOrder()
   return (
     <>
       <header className="bg-indigo-500 py-5">
@@ -29,7 +31,14 @@ function App() {
           <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-2">
             <OrderContents
               order={order}
+              removeItem={removeItem}
               total={totalOrder}
+            />
+            <TipPercentage
+            
+            />
+            <OrderTotals
+              order={order}
             />
           </div>
         </div>
