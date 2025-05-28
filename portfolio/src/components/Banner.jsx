@@ -13,11 +13,11 @@ export default function Banner() {
                         <h2>Developer</h2>
                     </div>
                     <div className="banner-info">
-                        <p>Being part of a company where I can put into practice all my
-                        knowledge about the technologies I master, have the opportunity to
-                        achieve my medium and long-term goals as well as develop my work,
-                        personal and intellectual skills.
-                        </p>
+                        <p>Professional with experience in process automation with UiPath and
+                        training in front-end web development. Interested in opportunities that
+                        allow me to contribute technological solutions while continuing to grow in
+                        both areas
+                                                </p>
                     </div>
                 </div>
                 <div className="banner-interactive">

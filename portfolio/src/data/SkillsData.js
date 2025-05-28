@@ -1,6 +1,11 @@
 
 export const SkillsData = [
     {
+        name:'UiPath RPA',
+        description:'I use this technologie to can design the core of web applications.',
+        icon:'./../../public/img/uipath.webp'
+    },
+    {
         name:'HTML',
         description:'I use this technologie to can design the core of web applications.',
         icon:'./../../public/img/html.png'
@@ -19,6 +24,11 @@ export const SkillsData = [
         name:'React Js',
         description:'I use this technologie to put designs and styles into my web apps.',
         icon:'./../../public/img/science.png'
+    },
+    {
+        name:'TypeScript',
+        description:'I use this technologie to put designs and styles into my web apps.',
+        icon:'./../../public/img/typescript.png'
     },
     {
         name:'GitHub',
