@@ -10,7 +10,7 @@ type OrderContentsProps = {
 export default function OrderContents({order,removeItem} :OrderContentsProps) {
   return (
     <div>
-        <h2 className='font-bold text-2xl text-indigo-500'>
+        <h2 className='font-bold text-2xl  text-rose-500'>
             Consumo
         </h2>
         <div>
@@ -21,7 +21,7 @@ export default function OrderContents({order,removeItem} :OrderContentsProps) {
                 </p>:
                 (
                     order.map(item => (
-                        <div key={item.id} className="border border-dashed border-gray-300 mt-2 rounded p-2">
+                        <div key={item.id} className="border border-dashed border-gray-400 mt-2 rounded p-2">
                             <div className="flex justify-between">
                                 <div className="flex flex-col w-full">
                                     <div className="font-black">

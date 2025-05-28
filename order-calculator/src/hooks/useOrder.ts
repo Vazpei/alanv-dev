@@ -4,7 +4,8 @@ import type { MenuItem, OrderItem, TotalOrder } from "../types";
 
 export default function useOrder(){
     //Creamos un state que sea una lista de objetos tipo OrderItem
-    const [order,setOrder] = useState<OrderItem[]>([]);
+    const [ order, setOrder ] = useState<OrderItem[]>([]);
+    const [ tip, setTip ] = useState(0)
 
     const addItem = (item: MenuItem) => {
         //Para agregar un nuevo item al carrito debemos verificar que no exista para esto utilizamos un if el cual va a mapear cada articulo de order para revisar que no exista el item.
@@ -34,6 +35,8 @@ export default function useOrder(){
         addItem,
         totalOrder,
         removeItem,
-        setTotalOrder
+        setTotalOrder,
+        tip,
+        setTip
     }
 }
