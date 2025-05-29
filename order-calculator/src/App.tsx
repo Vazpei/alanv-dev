@@ -7,7 +7,7 @@ import OrderTotals from "./components/OrderTotals";
 import TipPercentage from "./components/TipPercentage";
 
 function App() {
-  const { order, addItem, totalOrder,removeItem,tip,setTip } = useOrder()
+  const { order, addItem, totalOrder,removeItem,tip,setTip,placeOrder,resetOrder } = useOrder()
   return (
     <>
       <header className=" py-5">
@@ -40,6 +40,8 @@ function App() {
             <OrderTotals
               order={order}
               tip={tip}
+              placeOrder={placeOrder}
+              resetOrder={resetOrder}
             />
           </div>
         </div>

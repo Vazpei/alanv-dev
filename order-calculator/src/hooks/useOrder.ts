@@ -28,6 +28,12 @@ export default function useOrder(){
        setOrder(order.filter( item => item.id !== id));
        console.log(order);
     }
+    const placeOrder = () => console.log('Guardando orden');
+    const resetOrder = () => {
+        console.log('Borrando orden actual...');
+        setOrder([]);
+    }
+
 
     console.log(order);
     return{
@@ -37,6 +43,8 @@ export default function useOrder(){
         removeItem,
         setTotalOrder,
         tip,
-        setTip
+        setTip,
+        placeOrder,
+        resetOrder
     }
 }
