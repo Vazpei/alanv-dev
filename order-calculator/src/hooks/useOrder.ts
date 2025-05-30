@@ -28,7 +28,10 @@ export default function useOrder(){
        setOrder(order.filter( item => item.id !== id));
        console.log(order);
     }
-    const placeOrder = () => console.log('Guardando orden');
+    const placeOrder = () => {
+        alert('Guardando orden, enviado a la db');
+        resetOrder()
+    }
     const resetOrder = () => {
         console.log('Borrando orden actual...');
         setOrder([]);

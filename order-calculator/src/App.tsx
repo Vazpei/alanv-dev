@@ -5,6 +5,7 @@ import useOrder from "./hooks/useOrder";
 import OrderContents from "./components/OrderContents";
 import OrderTotals from "./components/OrderTotals";
 import TipPercentage from "./components/TipPercentage";
+import AuthorName from "./components/AuthorName";
 
 function App() {
   const { order, addItem, totalOrder,removeItem,tip,setTip,placeOrder,resetOrder } = useOrder()
@@ -50,9 +51,12 @@ function App() {
               <p className="text-center text-2xl"> No hay nada aun</p>
             )}
             
+            
           </div>
         </div>
+        
       </main>
+      <AuthorName/>
     </>
   )
 }
