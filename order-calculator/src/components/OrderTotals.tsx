@@ -16,13 +16,7 @@ export default function OrderTotals({order,tip,placeOrder,resetOrder}:OrderTotal
     const tipAmount = useMemo(() => subtotalAmount * tip, [ tip, order ])
     const totalAmount = useMemo(() => subtotalAmount + tipAmount,[ tip,order ])
 
-    const checkCart = () => {
-        if(totalAmount === 0){
-            alert('No hay nada en la orden')
-        }else{
-            alert('Orden guardada')
-        }
-    }
+    
 
     return(
     <>

@@ -29,20 +29,27 @@ function App() {
         <div>
           
           <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-2">
-            <OrderContents
-              order={order}
-              removeItem={removeItem}
-              total={totalOrder}
-            />
-            <TipPercentage
-              setTip={setTip}
-            />
-            <OrderTotals
-              order={order}
-              tip={tip}
-              placeOrder={placeOrder}
-              resetOrder={resetOrder}
-            />
+            { order.length > 0 ? (
+              <>
+                <OrderContents
+                order={order}
+                removeItem={removeItem}
+                total={totalOrder}
+                />
+                <TipPercentage
+                  setTip={setTip}
+                />
+                <OrderTotals
+                  order={order}
+                  tip={tip}
+                  placeOrder={placeOrder}
+                  resetOrder={resetOrder}
+                />  
+              </>
+            ):(
+              <p className="text-center text-2xl"> No hay nada aun</p>
+            )}
+            
           </div>
         </div>
       </main>
