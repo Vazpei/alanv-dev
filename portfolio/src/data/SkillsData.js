@@ -77,7 +77,7 @@ export const SkillsData = [
 export const ProjectsData =[
     {
         name:'Order calculator',
-        link:'https://curious-mandazi-42c5fa.netlify.app/',
+        link:'https://alanv-order-calculator.netlify.app/',
         imgLink:'/img/projects/order-calculator.png',
         tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
     },
