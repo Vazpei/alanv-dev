@@ -8,9 +8,11 @@ function App() {
 
   return (
     <>
+    <div className='bg-linear-410 from-indigo-600 to-black text-white'>
       <Banner/>
       <SkillSet/>
       <Projects/>
+    </div>
     </>
   )
 }

@@ -13,7 +13,7 @@ export default function Banner() {
                         <h2 className='text-center text-indigo-500 mt-1 text-2xl font-normal'>Developer</h2>
                     </div>
                     <div className="banner-info">
-                        <p className='text-white p-3 text-center mt-4'>Professional with experience in process automation with UiPath and
+                        <p className='text-white p-3 text-center mt-4 max-w-3xl m-auto'>Professional with experience in process automation with UiPath and
                         training in front-end web development. Interested in opportunities that
                         allow me to contribute technological solutions while continuing to grow in
                         both areas

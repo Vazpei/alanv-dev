@@ -49,5 +49,42 @@ export const SkillsData = [
         name:'Photoshop',
         description:'I use this technologie to put designs and styles into my web apps.',
         icon:'./../../public/img/photoshop.png'
+    },
+    {
+        name:'Tailwind',
+        description:'I use this technologie to put designs and styles into my web apps.',
+        icon:'https://www.svgrepo.com/show/374118/tailwind.svg'
+    },
+    {
+        name:'Java',
+        description:'I use this technologie to put designs and styles into my web apps.',
+        icon:'https://cdn.worldvectorlogo.com/logos/java.svg'
+    }
+]
+
+export const ProjectsData =[
+    {
+        name:'Order calculator',
+        link:'https://curious-mandazi-42c5fa.netlify.app/',
+        imgLink:'./../../public/img/projects/order-calculator.png',
+        tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
+    },
+    {
+        name:'Order calculator',
+        link:'https://curious-mandazi-42c5fa.netlify.app/',
+        imgLink:'./../../public/img/projects/order-calculator.png',
+        tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
+    },
+    {
+        name:'Order calculator',
+        link:'https://curious-mandazi-42c5fa.netlify.app/',
+        imgLink:'./../../public/img/projects/order-calculator.png',
+        tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
+    },
+    {
+        name:'Order calculator',
+        link:'https://curious-mandazi-42c5fa.netlify.app/',
+        imgLink:'./../../public/img/projects/order-calculator.png',
+        tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
     }
 ]

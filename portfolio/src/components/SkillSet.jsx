@@ -5,9 +5,10 @@ import SkillCard from './SkillCard.jsx'
 
 export default function SkillSet(){
     return(
-        <> 
-        <h2 className='skill-card-title bg-indigo-950 text-white'>Skill-Set</h2>
-            <div className="skill-card-grid bg-linear-20 from-indigo-950 to-black text-white">
+        <>
+        <div className=''>
+            <h2 className='skill-card-title  text-white text-2xl pl-20 pt-10 pb-10 font-bold'>Skill-Set</h2>
+            <div className="skill-card-grid flex flex-wrap justify-center gap-5 bg-linear-20 pl-10 pr-10 pb-10  text-white">
                 {SkillsData.map(tech => {
                     const { name,description,icon } = tech;
                     return(
@@ -22,7 +23,7 @@ export default function SkillSet(){
                     )
                 })}
             </div>
-            
+        </div>
         </>
     )
 }
