@@ -3,8 +3,8 @@ import Calculator from "./components/Calculator";
 
 
 function App() {
-  
-  const { suma,operation,setOperation } = useOperations()
+
+  const { screenResult,setScreenResult,writingScreenR,makingCalc,activeOperator,setActiveOperator,finishedNumber } = useOperations()
 
   return (
     <>
@@ -12,7 +12,13 @@ function App() {
           <h2 className="text-center text-2xl mt-10 mb-10"> Calculadora de React,Vite,Typescript & Tailwind</h2>
       </div>
       <Calculator
-        
+        screenResult={screenResult}
+        setScreenResult={setScreenResult}
+        writeScreenR={writingScreenR}
+        makingCalc={makingCalc}
+        activeOperator={activeOperator}
+        setActiveOperator={setActiveOperator}
+        finishedNumber={finishedNumber}
       />
       <div>
         <h2 className="text-center mt-10">
