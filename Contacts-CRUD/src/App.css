@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.inputs-space{
+    @apply bg-gray-200
+}
