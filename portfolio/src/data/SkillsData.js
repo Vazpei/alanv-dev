@@ -82,21 +82,9 @@ export const ProjectsData =[
         tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
     },
     {
-        name:'Order calculator',
-        link:'https://curious-mandazi-42c5fa.netlify.app/',
-        imgLink:'/img/projects/order-calculator.png',
-        tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
-    },
-    {
-        name:'Order calculator',
-        link:'https://curious-mandazi-42c5fa.netlify.app/',
-        imgLink:'/img/projects/order-calculator.png',
-        tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
-    },
-    {
-        name:'Order calculator',
-        link:'https://curious-mandazi-42c5fa.netlify.app/',
-        imgLink:'/img/projects/order-calculator.png',
-        tech:'Order and Tip calculator proyect created with: React,Typescript and Tailwind'
+        name:'React-Tailwind Calculator',
+        link:'https://react-tilwind-calculator.netlify.app/',
+        imgLink:'/img/projects/React-calculator.png',
+        tech:'Calculator project created with react and tailwind'
     }
 ]
