@@ -86,5 +86,11 @@ export const ProjectsData =[
         link:'https://react-tilwind-calculator.netlify.app/',
         imgLink:'/img/projects/React-calculator.png',
         tech:'Calculator project created with react and tailwind'
+    },
+    {
+        name:'Crud Contacts app',
+        link:'https://react-tilwind-calculator.netlify.app/',
+        imgLink:'/img/projects/react-contacts.png',
+        tech:'App created to CRUD for contacts with react, typescript, tailwind'
     }
 ]

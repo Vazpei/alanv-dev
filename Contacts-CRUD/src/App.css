@@ -3,3 +3,6 @@
 .inputs-space{
     @apply bg-gray-200
 }
+html{
+    background-color: zinc-900;
+}
