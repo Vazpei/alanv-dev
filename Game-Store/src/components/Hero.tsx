@@ -20,6 +20,7 @@ export default function Hero({page,setPage}:HeroProps) {
                 <p className="text-2xl">Game Over</p>
             </div>
             <div className="buttons flex gap-5">
+              <button className=" transition-all hover:scale-130" onClick={() => setPage('cart')}><img src="/img/cart.svg" title="cart" alt="" /></button>
                 <button 
                 className="btn p-2 outline-2 rounded hover:bg-white hover:text-black transition-all"
                 onClick={() => alert(`Register clicked!`)}
