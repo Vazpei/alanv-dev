@@ -11,7 +11,8 @@ export default function useCart() {
         year:0,
         distributor:'',
         platform:'',
-        price:0
+        price:0,
+        img:''
     })
 
     const addToCart = () =>{

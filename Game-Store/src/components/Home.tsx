@@ -1,6 +1,6 @@
 
 import type { Game } from "../types"
-
+import AllGamesSection from "./AllGamesSection";
 
 type HomeProps = {
   game:Game
@@ -9,7 +9,7 @@ type HomeProps = {
   setCart:React.Dispatch<React.SetStateAction<Game[]>>
 }
 
-export default function Home({setGame,setCart,game,cart}:HomeProps) {
+export default function Home({setGame,setCart,game}:HomeProps) {
   const randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
 
   function addGame() {
@@ -20,6 +20,7 @@ export default function Home({setGame,setCart,game,cart}:HomeProps) {
       distributor:'Square Enix',
       platform:'Play Station 5',
       price:699,
+      img:'https://anewgameplus.com/wp-content/uploads/2024/03/final-fantasy-vii-rebirth-cover.jpg'
     }
 
     console.log(`Setting game on cart ${game.name}`)
@@ -29,11 +30,12 @@ export default function Home({setGame,setCart,game,cart}:HomeProps) {
 
   return (
     <div>
-      <h2 className="font-bold text-2xl mt-10 ml-5">
-        Home
-      </h2>
-      <div className="img-text flex flex-col mt-20 gap-5 p-5 justify-center">
-        <h2 className="text-2xl text-center mb-5">Compra Final Fantasy VII: Rebirth!</h2>
+      
+      <div className="img-text flex flex-col mt-10 gap-5 p-5 justify-center">
+        <h2 className="font-bold text-2xl mt-10 ml-5">
+        Featured
+        </h2>
+        <h2 className="text-2xl text-center mb-5">Buy Final Fantasy VII: Rebirth!</h2>
         <div className="flex flex-wrap justify-center items-center gap-2">
           <img 
           src="https://anewgameplus.com/wp-content/uploads/2024/03/final-fantasy-vii-rebirth-cover.jpg" 
@@ -48,18 +50,14 @@ export default function Home({setGame,setCart,game,cart}:HomeProps) {
           onClick={() => addGame()}>Add to cart</button>
         </div>
       </div>
-      <div>
-        game: {game.name}
-      </div>
-      <div>
-        Cart: {cart.map(game => {
-          return(
-            <div>
-              {game.id}
-              {game.name}
-            </div>
-          )
-        })}
+      <div className="all-games ">
+        <h2 className="font-bold text-2xl mt-10 ml-5 mb-10">
+        All games
+        </h2>
+        <AllGamesSection
+          setCart={setCart}
+          setGame={setGame}
+        />
       </div>
     </div>
   )

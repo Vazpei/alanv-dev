@@ -6,5 +6,6 @@ export type Game = {
     year:number,
     distributor:string,
     platform:string,
-    price:number
+    price:number,
+    img:string
 }

@@ -20,6 +20,7 @@ function App() {
         <Payment
           setPage={setPage}
           page={page}
+          cart={cart}
           />
       ):(
         <>
