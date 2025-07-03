@@ -1,36 +1,42 @@
 
-import type { Game } from "../types"
+import { useState } from "react";
+import type { CartItem,Game } from "../types"
 import AllGamesSection from "./AllGamesSection";
 
 type HomeProps = {
-  game:Game
-  cart:Game[]
-  setGame: React.Dispatch<React.SetStateAction<Game>>
-  setCart:React.Dispatch<React.SetStateAction<Game[]>>
+  cart:CartItem[]
+  setCart:React.Dispatch<React.SetStateAction<CartItem[]>>
+  addToCart: (item:Game) => void
 }
 
-export default function Home({setGame,setCart,game}:HomeProps) {
-  const randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+export default function Home({setCart,addToCart}:HomeProps) {
+
+  const [ message,setMessage ] = useState(false)
 
   function addGame() {
     const newGame:Game = {
-      id:randomNumber,
-      name:'Final Fantasy VII: Rebirth',
-      year:2025,
-      distributor:'Square Enix',
-      platform:'Play Station 5',
-      price:699,
-      img:'https://anewgameplus.com/wp-content/uploads/2024/03/final-fantasy-vii-rebirth-cover.jpg'
+      id: 5,
+      name: 'Final Fantasy VII: Rebirth',
+      year: 2024,
+      distributor: 'Square Enix',
+      platform: 'PlayStation 5',
+      unitPrice: 1399,
+      img: 'https://upload.wikimedia.org/wikipedia/en/7/75/Boxart_for_Final_Fantasy_VII_Rebirth.png'
     }
-
-    console.log(`Setting game on cart ${game.name}`)
-    setCart(prev => [...prev,newGame])
-    setGame(newGame)
+    addToCart(newGame)
+    setMessage(true)
   }
-
   return (
     <div>
-      
+      <div className="modal">
+        {message && (
+          <div>
+            <h2>Felicidades</h2>
+            <div></div>
+          </div>
+        )
+        }
+      </div>
       <div className="img-text flex flex-col mt-10 gap-5 p-5 justify-center">
         <h2 className="font-bold text-2xl mt-10 ml-5">
         Featured
@@ -55,8 +61,8 @@ export default function Home({setGame,setCart,game}:HomeProps) {
         All games
         </h2>
         <AllGamesSection
+          addToCart={addToCart}
           setCart={setCart}
-          setGame={setGame}
         />
       </div>
     </div>

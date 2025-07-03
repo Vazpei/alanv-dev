@@ -6,7 +6,7 @@ export const gameList = [
         year:2021,
         distributor:'Square Enix',
         platform:'Play Station 5',
-        price:299,
+        unitPrice:299,
         img:'https://upload.wikimedia.org/wikipedia/en/c/ce/FFVIIRemake.png'
     },
     {
@@ -15,7 +15,7 @@ export const gameList = [
         year:2004,
         distributor:'Capcom',
         platform:'Play Station 2',
-        price:299,
+        unitPrice:299,
         img:'https://upload.wikimedia.org/wikipedia/en/d/d9/Resi4-gc-cover.jpg'
     },
     {
@@ -24,7 +24,7 @@ export const gameList = [
         year:2006,
         distributor:'Capcom',
         platform:'Play Station 2',
-        price:299,
+        unitPrice:299,
         img:'https://m.media-amazon.com/images/I/71R+Na4J2aL._UF1000,1000_QL80_.jpg'
     },
     {
@@ -33,7 +33,7 @@ export const gameList = [
         year:2011,
         distributor:'Rocksteady',
         platform:'Xbox 360',
-        price:899,
+        unitPrice:899,
         img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8Rla3ArRP18rv3LHe4hIWLh7To69XjHofg&s'
     },
     {
@@ -42,7 +42,7 @@ export const gameList = [
         year:2011,
         distributor:'Microsoft',
         platform:'Xbox 360',
-        price:899,
+        unitPrice:899,
         img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHQMuIILI8keKX0xnSD9RQjIuYf6GZgcp1pA&s'
     },
     {
@@ -51,7 +51,7 @@ export const gameList = [
         year:2011,
         distributor:'Cd Project Red',
         platform:'Xbox Series X',
-        price:899,
+        unitPrice:899,
         img:'https://howlongtobeat.com/games/141056_Cyberpunk_2077_Ultimate_Edition.jpg?width=760'
     },
     {
@@ -60,7 +60,7 @@ export const gameList = [
         year: 2015,
         distributor: 'CD Projekt Red',
         platform: 'PlayStation 4',
-        price: 599,
+        unitPrice: 599,
         img: 'https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S2_1200x1600-53a8fb2c0201cd8aea410f2a049aba3f'
     },
     {
@@ -69,7 +69,7 @@ export const gameList = [
         year: 2022,
         distributor: 'Sony Interactive Entertainment',
         platform: 'PlayStation 5',
-        price: 1199,
+        unitPrice: 1199,
         img: 'https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg'
     },
     {
@@ -78,7 +78,7 @@ export const gameList = [
         year: 2018,
         distributor: 'Rockstar Games',
         platform: 'Xbox One',
-        price: 799,
+        unitPrice: 799,
         img: 'https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg'
     },
     {
@@ -87,7 +87,7 @@ export const gameList = [
         year: 2022,
         distributor: 'Bandai Namco',
         platform: 'PC',
-        price: 1099,
+        unitPrice: 1099,
         img: 'https://m.media-amazon.com/images/I/614Y4NA6CVL._UF1000,1000_QL80_.jpg'
     },
     {
@@ -96,7 +96,7 @@ export const gameList = [
         year: 2024,
         distributor: 'Square Enix',
         platform: 'PlayStation 5',
-        price: 1399,
+        unitPrice: 1399,
         img: 'https://upload.wikimedia.org/wikipedia/en/7/75/Boxart_for_Final_Fantasy_VII_Rebirth.png'
     },
     {
@@ -105,7 +105,7 @@ export const gameList = [
         year: 2023,
         distributor: 'Warner Bros. Games',
         platform: 'PlayStation 5',
-        price: 999,
+        unitPrice: 999,
         img: 'https://i.etsystatic.com/40281750/r/il/f21c3a/4616903960/il_fullxfull.4616903960_htxz.jpg'
     },
     {
@@ -114,7 +114,7 @@ export const gameList = [
         year: 2021,
         distributor: 'Xbox Game Studios',
         platform: 'Xbox Series X',
-        price: 799,
+        unitPrice: 799,
         img: 'https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png'
     },
     {
@@ -123,7 +123,7 @@ export const gameList = [
         year: 2023,
         distributor: 'Sony Interactive Entertainment',
         platform: 'PlayStation 5',
-        price: 1199,
+        unitPrice: 1199,
         img: 'https://upload.wikimedia.org/wikipedia/en/0/0f/SpiderMan2PS5BoxArt.jpeg'
     },
     {
@@ -132,7 +132,7 @@ export const gameList = [
         year: 2023,
         distributor: 'Capcom',
         platform: 'PC',
-        price: 949,
+        unitPrice: 949,
         img: 'https://upload.wikimedia.org/wikipedia/en/d/df/Resident_Evil_4_remake_cover_art.jpg'
     },
     {
@@ -141,7 +141,7 @@ export const gameList = [
         year: 2021,
         distributor: 'Bethesda',
         platform: 'PC',
-        price: 999,
+        unitPrice: 999,
         img: 'https://i.redd.it/b1ga0sjfnh5d1.jpeg'
     } 
 ]

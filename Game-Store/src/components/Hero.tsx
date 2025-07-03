@@ -28,7 +28,7 @@ export default function Hero({page,setPage}:HeroProps) {
                 <button className="transition-all hover:scale-110 hover:border-b-2">Sign in</button>
             </div>
         </div>
-        <nav className="flex gap-5 justify-between m-auto pt-10 max-w-2xl">
+        <nav className="flex gap-5 justify-around m-auto pt-10 max-w-2xl">
                 <a 
                 href=''
                 onClick={(e) => handleACLick(e,'home')}  
@@ -39,13 +39,6 @@ export default function Hero({page,setPage}:HeroProps) {
                 onClick={(e) => handleACLick(e,'explore')}  
                 className={`transition-all hover:scale-120 ${page === 'explore' ? 'font-bold' : ''}`}
                 >Explore</a>
-
-                <a href="platforms" 
-                onClick={(e) => handleACLick(e,'platforms')} className={`transition-all hover:scale-120 ${page === 'platforms' ? 'font-bold' : ''}`}>Platforms</a>
-
-                <a href="" 
-                onClick={(e) => handleACLick(e,'consoles')} 
-                className={`transition-all hover:scale-120 ${page === 'consoles' ? 'font-bold' : ''}`}>Consoles</a>
 
                 <a href="" 
                 onClick={(e) => handleACLick(e,'about')} 

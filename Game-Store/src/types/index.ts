@@ -6,6 +6,11 @@ export type Game = {
     year:number,
     distributor:string,
     platform:string,
-    price:number,
+    unitPrice:number,
     img:string
+}
+
+export type CartItem = Game & {
+    quantity:number
+    totalPrice:number
 }
