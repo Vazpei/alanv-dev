@@ -25,7 +25,10 @@ export default function Hero({page,setPage}:HeroProps) {
                 className="btn p-2 outline-2 rounded hover:bg-white hover:text-black transition-all"
                 onClick={() => alert(`Register clicked!`)}
                 >Register</button>
-                <button className="transition-all hover:scale-110 hover:border-b-2">Sign in</button>
+                <button 
+                className="transition-all hover:scale-110 hover:border-b-2"
+                onClick={() => alert(`Sign in clicked!`)}
+                >Sign in</button>
             </div>
         </div>
         <nav className="flex gap-5 justify-around m-auto pt-10 max-w-2xl">
@@ -44,9 +47,9 @@ export default function Hero({page,setPage}:HeroProps) {
                 onClick={(e) => handleACLick(e,'about')} 
                 className={`transition-all hover:scale-120 ${page === 'about' ? 'font-bold' : ''}`}>About Us</a>
         </nav>
-        <div className="promotion-now mt-10 flex flex-col w-full gap-3">
-            <p className="text-3xl">Play <span className="text-red-500 font-bold">Resident Evil 4</span> now!</p>
-            <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus perferendis accusamus adipisci aperiam illum alias qui.</p>
+        <div className="promotion-now pt-10 flex flex-col w-full gap-3 max-w-300 m-auto">
+            <p className="text-4xl">Play <span className="text-red-500 font-bold">Resident Evil 4</span> now!</p>
+            <p className=" text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus perferendis accusamus adipisci aperiam illum alias qui.</p>
         </div>
     </div>
   )
