@@ -92,5 +92,11 @@ export const ProjectsData =[
         link:'https://react-tilwind-calculator.netlify.app/',
         imgLink:'/img/projects/react-contacts.png',
         tech:'App created to CRUD for contacts with react, typescript, tailwind'
+    },
+    {
+        name:'Cafe-Shop Catalogue app',
+        link:'https://cafeshop-alandev.netlify.app/',
+        imgLink:'/img/projects/cafe-shop.png',
+        tech:'Cafe shop menu website created to show typescript, tailwind'
     }
 ]
