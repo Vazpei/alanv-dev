@@ -11,6 +11,11 @@ function App() {
           </h1>
         </div>
       </header>
+      <section className="bg-lime-500 py-20 px-5">
+        <div className="max-w-4xl mx-auto">
+          
+        </div>
+      </section>
     </>
   )
 }

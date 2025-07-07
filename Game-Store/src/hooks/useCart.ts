@@ -22,7 +22,7 @@ export default function useCart() {
                         if(game.id === item.id) 
                         {
                             console.log(`Entering if game id and item id`);
-                            const newQty = game.quantity++;
+                            const newQty = game.quantity + 1;
                             return{
                                 ...game,
                                 quantity:newQty,
@@ -47,7 +47,7 @@ export default function useCart() {
             prev
             .map(game =>{
                 if(game.id === id){
-                    const newQty = game.quantity++
+                    const newQty = game.quantity + 1
                     return{
                         ...game,
                         quantity: newQty,
@@ -64,7 +64,7 @@ export default function useCart() {
         prev
         .map(game =>{
             if(game.id === id){
-                const newQty = game.quantity--
+                const newQty = game.quantity - 1
                 return{
                     ...game,
                     quantity:newQty,
