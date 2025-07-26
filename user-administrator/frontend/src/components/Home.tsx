@@ -20,12 +20,19 @@ export default function Home() {
       });
   }, []);
 
+  const orderUsers = () => {
+    const orderedUsers = [...users].sort((a, b) => a.name.localeCompare(b.name));
+    setUsers(orderedUsers);
+  }
   return (
-    <div className="w-full md:w-150 p-5">
-      <div className="text-3xl font-bold text-sky-600">Welcome back!</div>
+    <div className="w-full md:w-120 pl-5 pr-5">
+      <div className="text-3xl font-bold text-violet-500">Welcome back!</div>
       <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae autem placeat eius quidem aliquid, officia quae culpa consequatur ex possimus sint architecto facere rem, nam sunt quos molestias eveniet? Aliquid?</div>
-      <div>
-        <h2 className="mt-10 text-2xl font-bold text-sky-600">All registered users</h2>
+      <div className="flex justify-between mt-10">
+        <h2 className="text-2xl font-bold text-violet-500">All registered users</h2>
+        <button 
+        onClick={orderUsers}
+        className="bg-violet-600 p-2 rounded font-bold active:bg-violet-300">A - Z</button>
       </div>
       <div className="mt-5 flex flex-col ">
         {loading && <div>Loading users...</div>}
@@ -33,13 +40,14 @@ export default function Home() {
         {!loading && !error && (
           <ul>
             {users.map((user: any) => (
-              <li key={user._id} className="mb-2">
-                <span className="font-bold">{user.name}</span> - {user.email}
+              <li key={user._id} className="mb-2 flex gap-2">
+                <h2 className="font-bold">{user.name} -</h2><div> {user.email}</div>
               </li>
             ))}
           </ul>
         )}
       </div>
+
     </div>
   )
 }
