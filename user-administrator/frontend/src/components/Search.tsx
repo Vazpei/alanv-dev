@@ -64,7 +64,7 @@ export default function Search() {
 
   return (
     <div className="w-full md:w-120 p-2 m-auto">
-      <div className="text-3xl font-bold text-violet-500 text-center">Search</div>
+      <div className="text-3xl font-bold text-violet-500 text-center">Search user by id</div>
       <div className="flex justify-center mt-5">
         <input 
         onChange={handleSearchChange}
