@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
+import type { User } from "../types/User";
 
 
 export default function Home() {
@@ -16,14 +17,12 @@ export default function Home() {
       })
       .catch(err => {
         console.error("Error fetching users:", err);
+        setError("Failed to load users.");
         setLoading(false);
       });
   }, []);
 
-  const orderUsers = () => {
-    const orderedUsers = [...users].sort((a, b) => a.name.localeCompare(b.name));
-    setUsers(orderedUsers);
-  }
+  
   return (
     <div className="w-full md:w-120 pl-5 pr-5">
       <div className="text-3xl font-bold text-violet-500">Welcome back!</div>
@@ -31,7 +30,6 @@ export default function Home() {
       <div className="flex justify-between mt-10">
         <h2 className="text-2xl font-bold text-violet-500">All registered users</h2>
         <button 
-        onClick={orderUsers}
         className="bg-violet-600 p-2 rounded font-bold active:bg-violet-300">A - Z</button>
       </div>
       <div className="mt-5 flex flex-col ">
@@ -39,8 +37,8 @@ export default function Home() {
         {error && <div className="text-red-500">{error}</div>}
         {!loading && !error && (
           <ul>
-            {users.map((user: any) => (
-              <li key={user._id} className="mb-2 flex gap-2">
+            {users.map((user: User) => (
+              <li className="mb-2 flex gap-2">
                 <h2 className="font-bold">{user.name} -</h2><div> {user.email}</div>
               </li>
             ))}
