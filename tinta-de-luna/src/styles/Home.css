@@ -1,0 +1,11 @@
+
+.text-crema{
+    color: bisque;
+    border: 1px solid bisque;
+    border-radius: 3px;
+}
+.bg-crema{
+    background-color: bisque;
+    color:black;
+    border-radius: 3px;
+}
