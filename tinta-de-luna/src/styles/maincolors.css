@@ -1,0 +1,13 @@
+
+.bg-crema{
+    background-color: bisque;
+}
+.bg-crema:hover{
+    background-color: rgb(246, 242, 226);
+}
+.bg-cafe-nav{
+    background-color: rgb(46,38,36);
+}
+.bg-cafe{
+    background-color: #403134;
+}
