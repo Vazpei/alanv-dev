@@ -1,10 +1,11 @@
  import { useState } from "react"
 
  type NavProps = {
+    page:String
     setPage: React.Dispatch<React.SetStateAction<string>>
  }
 
-export default function Nav({setPage}:NavProps) {
+export default function Nav({page,setPage}:NavProps) {
 
     const [ isOpen,setIsOpen ] = useState(false)
 
@@ -20,17 +21,21 @@ export default function Nav({setPage}:NavProps) {
             <div>
                 <div><img src="/helarteLogo.png" className=' w-20'alt="" /></div>
             </div>
-            <nav className=" flex gap-4">
+            <nav className=" flex gap-6  justify-between">
                 <button
+                className={`transition-all ${page === 'home' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('home')}
                 >Inicio</button>
                 <button
+                className={`transition-all duration-300 ${page === 'menu' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('menu')}
                 >Menu</button>
                 <button
+                className={`transition-all  ${page === 'contact' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('contact')}
                 >Contactanos</button>
                 <button
+                className={`transition-all  ${page === 'location' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('location')}
                 >¿Donde estamos?</button>
             </nav>
