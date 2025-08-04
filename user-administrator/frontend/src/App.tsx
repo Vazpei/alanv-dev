@@ -8,6 +8,7 @@ import Delete from './components/Delete';
 import useCrud from './hooks/useCrud';
 import Navigator from './components/Navigator';
 
+
 function App() {
   
   const [page,setPage] = useState('home');
