@@ -23,19 +23,19 @@ export default function Nav({page,setPage}:NavProps) {
             </div>
             <nav className=" flex gap-6  justify-between">
                 <button
-                className={`transition-all ${page === 'home' ? 'font-bold text-amber-600' : '' }`}
+                className={`transition-all hover:scale-110 duration-300 ${page === 'home' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('home')}
                 >Inicio</button>
                 <button
-                className={`transition-all duration-300 ${page === 'menu' ? 'font-bold text-amber-600' : '' }`}
+                className={`transition-all hover:scale-110 duration-300  ${page === 'menu' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('menu')}
                 >Menu</button>
                 <button
-                className={`transition-all  ${page === 'contact' ? 'font-bold text-amber-600' : '' }`}
+                className={`transition-all hover:scale-110 duration-300   ${page === 'contact' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('contact')}
                 >Contactanos</button>
                 <button
-                className={`transition-all  ${page === 'location' ? 'font-bold text-amber-600' : '' }`}
+                className={`transition-all hover:scale-110 duration-300   ${page === 'location' ? 'font-bold text-amber-600' : '' }`}
                 onClick={() => handleNavButton('location')}
                 >¿Donde estamos?</button>
             </nav>
