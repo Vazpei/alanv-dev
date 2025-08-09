@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className="mini-menu">
         <p className="text-2xl max-w-320 m-auto mb-10">Destacados</p>
-        <div className="flex flex-wrap justify-center gap-5 m-auto max-w-320">
+        <div className="flex flex-wrap justify-center gap-8 m-auto max-w-320">
           {db.map(item => {
             const { name, description, price, img } = item
             return (
@@ -33,7 +33,7 @@ export default function Home() {
                 <div><img src={img} className="w-full h-50" alt="" /></div>
                 <div className="font-bold text-amber-600 text-2xl">{name}</div>
                 <div>{description}</div>
-                <div>{price}</div>
+                <div className="font-bold text-2xl ">{price}</div>
               </div>
             )
           })}
