@@ -87,10 +87,18 @@ export const Technologies = [
 export const Projects = [
     {
         name:'React + Tailwind calculator.',
-        description:'Calculator created with React, Tailwind and Typescript.',
+        description:'Simple calculator web app.',
         technologies:['React','Tailwind','TypeScript'],
         url:'https://react-tilwind-calculator.netlify.app/',
         image:'/react-calculator.png'
+    },
+    {
+        name:'Cafe Shop menu.',
+        description:'Cafe shop presentation application.',
+        technologies:['React','Tailwind'],
+        url:'https://cafeshop-alandev.netlify.app/',
+        image:'/cofe-shop.png'
     }
+
 ]
 
