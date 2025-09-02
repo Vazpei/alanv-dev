@@ -12,7 +12,7 @@ import Navigator from './components/Navigator';
 function App() {
   
   const [page,setPage] = useState('home');
-  const { test,user,setUser } = useCrud()
+  const { test,user,setUser,getAllUsers,users,setUsers,isSearching,setIsSearching } = useCrud()
   const settingPage = ( pageName: string) => {
     console.log('Setting page to:', pageName);
     setPage(pageName);
@@ -26,13 +26,27 @@ function App() {
         />
         <div className='flex-1 mr-auto ml-auto mt-20'>
         {/* ...right content... */}
-          {page === 'home' && <Home/>}
+          {page === 'home' && <Home
+          users={users}
+          getAllUsers={getAllUsers}
+          />}
           {page === 'create' && <Create
             User={user}
             setUser={setUser}
           />}
-          {page === 'search' && <Search/>}
-          {page === 'update' && <Update/>}
+          {page === 'search' && 
+          <Search
+            getAllUsers={getAllUsers}
+            setIsSearching={setIsSearching}
+            setUsers={setUsers}
+            isSearching={isSearching}
+            users={users}
+          />}
+          {page === 'update' && 
+          <Update
+            User={user}
+            SetUser={setUser}
+          />}
           {page === 'delete' && <Delete/>}
         </div>
       </div>

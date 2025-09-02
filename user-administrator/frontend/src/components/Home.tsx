@@ -1,30 +1,22 @@
-import axios from "axios"
-import { useEffect, useState } from "react";
+
+import { useEffect,useState } from "react";
 import type { User } from "../types/User";
 
+type HomeProps = {
+  getAllUsers: () => void;
+  users: User[]
+}
 
-export default function Home() {
+export default function Home({getAllUsers,users}: HomeProps) {
 
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:9898/all-users")
-      .then(res => {
-        setUsers(res.data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error("Error fetching users:", err);
-        setError("Failed to load users.");
-        setLoading(false);
-      });
+    getAllUsers()
   }, []);
 
   
   return (
-    <div className="w-full md:w-120 pl-5 pr-5">
+    <div className="w-full max-w-250 m-auto pl-5 pr-5">
       <div className="text-3xl font-bold text-violet-500">Welcome back!</div>
       <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae autem placeat eius quidem aliquid, officia quae culpa consequatur ex possimus sint architecto facere rem, nam sunt quos molestias eveniet? Aliquid?</div>
       <div className="flex justify-between mt-10">
@@ -32,20 +24,13 @@ export default function Home() {
         <button 
         className="bg-violet-600 p-2 rounded font-bold active:bg-violet-300">A - Z</button>
       </div>
-      <div className="mt-5 flex flex-col ">
-        {loading && <div>Loading users...</div>}
-        {error && <div className="text-red-500">{error}</div>}
-        {!loading && !error && (
-          <ul>
+        <div className="mt-5 flex flex-col justify-center md:items-center">
             {users.map((user: User) => (
               <li className="mb-2 flex gap-2">
                 <h2 className="font-bold">{user.name} -</h2><div> {user.email}</div>
               </li>
             ))}
-          </ul>
-        )}
       </div>
-
     </div>
   )
 }

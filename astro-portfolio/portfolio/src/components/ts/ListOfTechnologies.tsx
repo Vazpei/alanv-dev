@@ -1,4 +1,4 @@
-import { Technologies } from "../db/db.ts"
+import { Technologies } from "../../db/db.ts"
 
 export default function ListOfTechnologies() {
   return (
@@ -6,7 +6,7 @@ export default function ListOfTechnologies() {
             {Technologies.map(tech =>{
                 const { name,description,image } = tech
                 return (
-                    <div className="card flex gap-2 justify-center items-center p-2">
+                    <div key={tech.id} className="card flex gap-2 justify-center items-center p-2">
                         <div><img 
                         className="w-10"
                         src={image} 
